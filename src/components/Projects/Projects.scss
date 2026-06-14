@@ -1,0 +1,141 @@
+.projects{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.slider{
+    gap: 30px;
+    align-items: center;
+}
+
+.project-card{
+    width: 800px;
+    min-height:500px;
+    padding: 30px;
+    border-radius:25px;
+    cursor: pointer;
+    background: #111827;
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(30px);
+    border: 1px solid rgba(255,255,255,.08);
+    color: white; 
+}
+.project-card h2{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.project-card img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius:15px;
+}
+.FillCard{
+    width: min(1100px,90vw);
+    margin-top: 50px;
+    padding: 50px;
+    border-radius:30px;
+    background: rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    // box-shadow: 0 10px 40px rgba(0,0,0,.3);
+}
+.FillCard h1{
+    color: white;
+}
+.tech{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.tech span{
+    padding: 8px 10px;
+    border: 990px;
+    background:rgba(56,113,255,.2);
+}
+.box button{
+    width:60px;
+    height:60px;
+    border:none;
+    border-radius:50%;
+    // cursor:pointer;
+    // font-size:25px;
+}
+.box button img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.right{
+    animation:slideRight .5s ease;
+}
+
+@keyframes slideRight{
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.left{
+    animation:slideLeft .5s ease;
+}
+
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stack{
+    position: relative;
+    width: 1100px;
+    height: 550px;
+    overflow: visible;
+}
+
+.center-card{
+    position:absolute;
+    z-index:3;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:800px;
+}
+
+.left-card{
+    position:absolute;
+    z-index:1;
+    left:0;
+    top:50%;
+    transform:translateY(-50%) rotate(-7deg) scale(.9);
+    opacity:.5;
+}
+.right-card{
+    position:absolute;
+    z-index:1;
+    right:0;
+    top:50%;
+    transform:translateY(-50%) rotate(7deg) scale(.9);
+    opacity:.5;
+}

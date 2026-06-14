@@ -1,0 +1,15 @@
+.animate-letter{
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.animate-letter:hover{
+    animation: zoom 0.5s ease-in-out;
+    color: rgb(72, 234, 255);
+}
+
+@keyframes zoom{
+    0%{transform: scale(1);}
+    50%{transform: scale(2);}
+    100%{transform: scale(1);}
+}
