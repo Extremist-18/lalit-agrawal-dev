@@ -1,15 +1,19 @@
+import scheduler from "../assets/scheduler.png";
+import editor from "../assets/editor.jpg";
+import tracker from "../assets/tracker.png";
+
 const projects = [
     {
         id:1,
         title:"Distributed Task Scheduler",
-        image:"/src/assets/scheduler.png",
+        image:scheduler,
         description:"Concurrent scheduler handling 50K+ requests with 1.5ms latency.",
         tech:["C++","Multithreading","Concurrency","System Design"],
         github:"https://github.com/Extremist-18/Distributed-Task-Scheduler"
     },{
         id:2,
         title:"Code Editor",
-        image:"/src/assets/editor.jpg",
+        image: editor,
         description:"Containerized Execution engine using Docker.",
         tech:["React","Node","REST APIs"],
         github:"https://github.com/Extremist-18/codeEditor"
@@ -17,7 +21,7 @@ const projects = [
     {
         id:3,
         title:"Vault",
-        image:"/src/assets/tracker.png",
+        image: tracker,
         description:"Blockchain based Expense Tracker.",
         tech:["React","Solidity","MongoDB"],
         github:"https://github.com/Extremist-18/Vault"
