@@ -1,6 +1,6 @@
-import scheduler from "../assets/scheduler.png";
-import editor from "../assets/editor.jpg";
-import tracker from "../assets/tracker.png";
+import scheduler from "../../assets/scheduler.png";
+import editor from "../../assets/editor.jpg";
+import tracker from "../../assets/tracker.png";
 
 const projects = [
     {
