@@ -3,6 +3,9 @@ import { useState } from "react"
 import emailjs from "@emailjs/browser"
 import toast from "react-hot-toast"
 import HoverText from "../HoverText/HoverText"
+import { FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { SiLeetcode,SiCodeforces } from "react-icons/si";
+import { MdEmail} from "react-icons/md";
 
 const Contact=()=>{
     const [form,setForm]=useState({
@@ -54,9 +57,20 @@ const Contact=()=>{
             <div className="wrapper">
                 <h2><HoverText>Lets Connect</HoverText> </h2>
                 <h3 style={{color:"white"}}>I’m actively seeking opportunities with leading tech companies where I can contribute building large-scale, high-impact systems. 
-                    <br/>If you're working on ambitious challenges and believe I'd be a strong fit, 
+                    <br/>
+                    If you're working on ambitious challenges and believe I'd be a strong fit, 
                     I'd love to connect and explore opportunities.
                 </h3>
+
+                <div className="curr">
+                    <a href="mailto:lalitagrawal680@gmail.com" ><MdEmail/></a>
+                    <a href="https://www.linkedin.com/in/lalit-agrawal1808/" target="_blank" rel="noopener noreferrer"> <FaLinkedin/> </a>
+                    <a href="https://github.com/Extremist-18" target="_blank" rel="noopener noreferrer"><FaGithub /> </a>
+                    {/* <a href="https://leetcode.com/u/Lalit__Agrawal/" target="_blank" rel="noopener noreferrer"><SiLeetcode/></a> */}
+                    <a href="https://codeforces.com/profile/Lalit_Agrawal" target="_blank" rel="noopener noreferrer"><SiCodeforces/></a>
+                    <a href="tel:+919408389271" ><FaPhoneAlt/></a>
+                </div>
+
                 <div className="container">
                     <form onSubmit={sendEmail}>
                         <input type="text" name="name" placeholder="Name" value={form.name} onChange={handleChange} required/>
